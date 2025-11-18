@@ -1,2 +1,23 @@
-# Coding Calculator
-A fully functional scientific calculator built using HTML, CSS, and JavaScript (ES6+). It supports basic arithmetic operations (addition, subtraction, multiplication, division) as well as advanced functions like square root, power, trigonometric calculations, and percentage.  ✨ Features  Responsive and clean UI with modern CSS styling  Keyboard input support for faster calculations  Modular JavaScript code for easy maintenance  Accessible design with clear button layout  Works seamlessly across browsers  🚀 Tech Stack  HTML5 for structure  CSS3 for styling and animations  JavaScript (ES6+) for logic and interactivity  📌 Use Case This project demonstrates core web development skills, problem-solving with JavaScript, and UI/UX polish. Ideal for academic presentations, portfolio showcase, and recruiter-ready GitHub projects.
+A fully functional scientific calculator built using HTML, CSS, and JavaScript (ES6+). It supports basic arithmetic operations (addition, subtraction, multiplication, division) as well as advanced functions like square root, power, trigonometric calculations, and percentage.
+
+✨ Features
+
+Responsive and clean UI with modern CSS styling
+
+Keyboard input support for faster calculations
+
+Modular JavaScript code for easy maintenance
+
+Accessible design with clear button layout
+
+Works seamlessly across browsers
+
+🚀 Tech Stack
+
+HTML5 for structure
+
+CSS3 for styling and animations
+
+JavaScript (ES6+) for logic and interactivity
+
+📌 Use Case This project demonstrates core web development skills, problem-solving with JavaScript, and UI/UX polish. Ideal for academic presentations, portfolio showcase, and recruiter-ready GitHub projects.
