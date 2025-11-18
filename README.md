@@ -1,4 +1,5 @@
-#Coding Calculator
+🔢 Coding Calculator – Scientific Calculator Project
+
 A fully functional scientific calculator built using HTML, CSS, and JavaScript (ES6+). It supports basic arithmetic operations (addition, subtraction, multiplication, division) as well as advanced functions like square root, power, trigonometric calculations, and percentage.
 
 ✨ Features
