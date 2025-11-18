@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Calculator</title>
+    <link rel="stylesheet" href="../CSS/Calculator.css" />
+  </head>
+
+  <body>
+    <h1 class="calc-heading">Coding Calculator</h1>
+
+    <div id="Calculator">
+      <input type="text" id="Display" readonly />
+
+      <div id="button_container">
+        <button class="Button" onclick="clearDisplay()">AC</button>
+        <button class="Button" onclick="append('(')">(</button>
+        <button class="Button" onclick="append(')')">)</button>
+        <button class="Button" onclick="append('%')">%</button>
+        <button class="Button" onclick="append('sin(')">sin</button>
+        <button class="Button" onclick="append('cos(')">cos</button>
+        <button class="Button" onclick="append('tan(')">tan</button>
+        <button class="Button" onclick="append('log(')">log</button>
+        <button class="Button" onclick="append('In(')">In</button>
+        <button class="Button" onclick="append('√(')">√</button>
+        <button class="Button" onclick="append('π')">π</button>
+        <button class="Button" onclick="append('e')">e</button>
+        <button class="Button" onclick="append('^')">x^y</button>
+        <button class="Button" onclick="append('7')">7</button>
+        <button class="Button" onclick="append('8')">8</button>
+        <button class="Button" onclick="append('9')">9</button>
+        <button class="Button" onclick="append('/')">÷</button>
+        <button class="Button" onclick="append('4')">4</button>
+        <button class="Button" onclick="append('5')">5</button>
+        <button class="Button" onclick="append('6')">6</button>
+        <button class="Button" onclick="append('*')">x</button>
+        <button class="Button" onclick="append('1')">1</button>
+        <button class="Button" onclick="append('2')">2</button>
+        <button class="Button" onclick="append('3')">3</button>
+        <button class="Button" onclick="append('-')">-</button>
+        <button class="Button" onclick="append('0')">0</button>
+        <button class="Button" onclick="append('.')">.</button>
+        <button class="Button" onclick="append('+')">+</button>
+        <button class="Button" onclick="calculate()">=</button>
+        <button class="Button" onclick="doFactorial()">x!</button>
+      </div>
+    </div>
+
+    <script>
+      let currentDisplay = "";
+      let lastAnswer = 0;
+
+      function append(val) {
+        currentDisplay += val;
+        document.getElementById("Display").value = currentDisplay;
+      }
+
+      function clearDisplay() {
+        currentDisplay = "";
+        document.getElementById("Display").value = "";
+      }
+
+      function formatExpression(expr) {
+        return expr
+          .replace(/sin\(/g, "Math.sin(")
+          .replace(/cos\(/g, "Math.cos(")
+          .replace(/tan\(/g, "Math.tan(")
+          .replace(/log\(/g, "Math.log10(")
+          .replace(/In\(/g, "Math.log(")
+          .replace(/√\(/g, "Math.sqrt(")
+          .replace(/π/g, "Math.PI")
+          .replace(/e/g, "Math.E")
+          .replace(/\^/g, "**");
+      }
+
+      function calculate() {
+        try {
+          let formatted = formatExpression(currentDisplay);
+          let result = eval(formatted);
+          document.getElementById("Display").value = result;
+          lastAnswer = result;
+          currentDisplay = result.toString();
+        } catch (err) {
+          document.getElementById("Display").value = "Error";
+        }
+      }
+
+      function doFactorial() {
+        let value = parseInt(document.getElementById("Display").value);
+        if (isNaN(value) || value < 0) {
+          document.getElementById("Display").value = "Error";
+          return;
+        }
+        let result = 1;
+        for (let i = 1; i <= value; i++) {
+          result *= i;
+        }
+        document.getElementById("Display").value = result;
+        currentDisplay = result.toString();
+      }
+    </script>
+  </body>
+</html>
