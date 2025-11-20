@@ -25,10 +25,12 @@ CSS3 for styling and animations
 JavaScript (ES6+) for logic and interactivity
 
 🛠️ Tech Stack
+
 Technology	Role
 HTML	Interface Structure
 CSS	Modern UI + Animations
 JavaScript	Core Calculator Logic & DOM handling
+
 🎯 Project Goals
 
 Improve user experience with advanced mathematical support
