@@ -1,25 +1,51 @@
-🔢 Coding Calculator – Scientific Calculator Project
+📌 Smart Coding Calculator
 
-A fully functional scientific calculator built using HTML, CSS, and JavaScript (ES6+). It supports basic arithmetic operations (addition, subtraction, multiplication, division) as well as advanced functions like square root, power, trigonometric calculations, and percentage.
+A modern, multi-functional calculator built with HTML, CSS & JavaScript, designed to support both standard and scientific operations. Includes history tracking, theme toggle, keyboard support, error handling, and precise mathematical functions.
 
 ✨ Features
 
-Responsive and clean UI with modern CSS styling
+🧮 Standard Calculator → +, −, ×, ÷, modulo
 
-Keyboard input support for faster calculations
+📐 Scientific Functions → sin, cos, tan, log, ln, √, x^y, π, e
 
-Modular JavaScript code for easy maintenance
+🕘 Calculation History → Stores & displays past results
 
-Accessible design with clear button layout
+🎨 Dark/Light Theme Toggle → Smooth UI switching
 
-Works seamlessly across browsers
+⌨️ Keyboard Input Support → Fast user interaction
 
-🚀 Tech Stack
+🔢 Factorial, Percentage & Nested Brackets Support
 
-HTML5 for structure
+✔ Error-free UX with JSON-based evaluation
+
+📱 Fully responsive for all screen sizes
 
 CSS3 for styling and animations
 
 JavaScript (ES6+) for logic and interactivity
 
+🛠️ Tech Stack
+Technology	Role
+HTML	Interface Structure
+CSS	Modern UI + Animations
+JavaScript	Core Calculator Logic & DOM handling
+🎯 Project Goals
+
+Improve user experience with advanced mathematical support
+
+Showcase clean UI development & scalable JS structure
+
+Demonstrate DOM manipulation and event-based programming
+
+Practice responsive web design and theme management
+
+🚀 Future Improvements
+
+Add graph-plotting for equations
+
+Voice command input (AI & speech API)
+
+Scientific constant selection dropdown
+
+Better expression parser for precision computing
 
